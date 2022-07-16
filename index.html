@@ -1,14 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        /* Common Styles */
+        .d-inline-block {
+            display: inline-block;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .primaryBtn,
+        .secondaryBtn,
+        .tabBtn {
+            height: 50px;
+            border-radius: 10px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            border: none;
+            padding: 15px 17px;
+            cursor: pointer;
+            /* width: 100%; */
+        }
+
+        .primaryBtn {
+            background-color: #EF4023;
+            color: #FFFFFF;
+            padding: 16px 32px;
+        }
+
+        .secondaryBtn {
+            background-color: #FFFFFF;
+            color: #50B5FF;
+        }
+
+        .disableBtn {
+            opacity: 0.5 !important;
+            cursor: not-allowed;
+        }
+
+        .active {
+            color: #50B5FF;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        * {
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .header {
+            font-style: normal;
+            font-weight: 700;
+            color: #121A26;
+            line-height: 150%;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.2px;
+            color: #384860;
+        }
+
+        .link {
+            text-decoration: underline;
+            color: #0060B9;
+        }
+
+        /* MAIN */
+        body {
+            background-color: #F8F8FC;
+        }
+
+        .main_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* COMPANY LOGO */
+        .company_logo {
+            text-align: center;
+            margin: 32px;
+            margin-bottom: 61px;
+        }
+
+        .account_confirm,
+        .facing_problem {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            max-width: 544px;
+            width: 544px;
+            padding: 40px;
+        }
+
+        /* ACCOUNT CONFIRM */
+        .account_confirm {
+            /* display: flex;
+            flex-direction: column;
+            align-items: self-start; */
+            margin: auto;
+        }
+
+        .account_confirm .header {
+            font-size: 20px;
+        }
+
+        .account_confirm p {
+            font-size: 16px;
+
+        }
+
+        .account_confirm .primaryBtn {
+            display: inline-block;
+            margin: 20px auto;
+        }
+
+        /* FACING PROBLEM */
+        .facing_problem {
+            margin-top: 16px;
+            margin-bottom: 94px;
+        }
+
+        .facing_problem .header {
+            font-size: 16px;
+        }
+
+        .facing_problem p {
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #9D9D9D;
+        }
+    </style>
 </head>
+
 <body>
-    <main>
+    <main class="main_item">
         <section class="container">
             <div class="company_logo">
                 <img src="/assets/logos/company-logo.svg" alt="Aerolex Logo" srcset="">
@@ -17,8 +167,9 @@
                 <h1 class="header">Confirm Your Account Creation</h1>
                 <p>Hi Mr.Raihan Alauddin,</p>
                 <!-- <br> -->
-                <p>We are really happy to see you getting connected with our </br> family. Please click the link below to setup your password.</p>
-                <button class="primaryBtn">Click here to set password</button>
+                <p>We are really happy to see you getting connected with our </br> family. Please click the link below
+                    to setup your password.</p>
+                <a href="#" class="primaryBtn">Click here to set password</a>
             </div>
             <div class="facing_problem">
                 <h4>Facing any problem?</h4>
@@ -31,4 +182,5 @@
         <p><a class="link" href="/">Unsubscribe</a> from our emails</p>
     </footer>
 </body>
+
 </html>
