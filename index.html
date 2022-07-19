@@ -6,180 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-        /* Common Styles */
-        .d-inline-block {
-            display: inline-block;
-        }
-
-        .w-100 {
-            width: 100%;
-        }
-
-        .primaryBtn,
-        .secondaryBtn,
-        .tabBtn {
-            height: 50px;
-            border-radius: 10px;
-            font-family: "Roboto", sans-serif;
-            font-weight: 600;
-            font-size: 18px;
-            border: none;
-            padding: 15px 17px;
-            cursor: pointer;
-            /* width: 100%; */
-        }
-
-        .primaryBtn {
-            background-color: #EF4023;
-            color: #FFFFFF;
-            padding: 16px 32px;
-        }
-
-        .secondaryBtn {
-            background-color: #FFFFFF;
-            color: #50B5FF;
-        }
-
-        .disableBtn {
-            opacity: 0.5 !important;
-            cursor: not-allowed;
-        }
-
-        .active {
-            color: #50B5FF;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        }
-
-        * {
-            text-decoration: none;
-            list-style: none;
-            box-sizing: border-box;
-            font-family: "Roboto", sans-serif;
-        }
-
-        .header {
-            font-style: normal;
-            font-weight: 700;
-            color: #121A26;
-            line-height: 150%;
-        }
-
-        p {
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: 0.2px;
-            color: #384860;
-        }
-
-        .link {
-            text-decoration: underline;
-            color: #0060B9;
-        }
-
-        /* MAIN */
-        body {
-            background-color: #F8F8FC;
-        }
-
-        .main_item {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* COMPANY LOGO */
-        .company_logo {
-            text-align: center;
-            margin: 32px;
-            margin-bottom: 61px;
-        }
-
-        .account_confirm,
-        .facing_problem {
-            background-color: #FFFFFF;
-            border-radius: 8px;
-            max-width: 544px;
-            width: 544px;
-            padding: 40px;
-        }
-
-        /* ACCOUNT CONFIRM */
-        .account_confirm {
-            /* display: flex;
-            flex-direction: column;
-            align-items: self-start; */
-            margin: auto;
-        }
-
-        .account_confirm .header {
-            font-size: 20px;
-        }
-
-        .account_confirm p {
-            font-size: 16px;
-
-        }
-
-        .account_confirm .primaryBtn {
-            display: inline-block;
-            margin: 20px auto;
-        }
-
-        /* FACING PROBLEM */
-        .facing_problem {
-            margin-top: 16px;
-            margin-bottom: 94px;
-        }
-
-        .facing_problem .header {
-            font-size: 16px;
-        }
-
-        .facing_problem p {
-            font-size: 14px;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 14px;
-            color: #9D9D9D;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <main class="main_item">
+<body style="background-color: #F8F8FC; font-family: 'Roboto', sans-serif;">
+    <main class="main_item" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
         <section class="container">
-            <div class="company_logo">
+            <div class="company_logo" style="text-align: center;margin: 32px;margin-bottom: 61px;">
                 <img src="/assets/logos/company-logo.svg" alt="Aerolex Logo" srcset="">
             </div>
-            <div class="account_confirm">
-                <h1 class="header">Confirm Your Account Creation</h1>
-                <p>Hi Mr.Raihan Alauddin,</p>
+            <div class="account_confirm"
+                style="background-color: #FFFFFF;border-radius: 8px;max-width: 544px;width: 544px;padding: 40px;display: flex;flex-direction: column;align-items: self-start;margin: auto;">
+                <h1 class="header" style="font-size: 20px;">Confirm Your Account Creation</h1>
+                <p
+                    style="font-size: 16px;font-style: normal;font-weight: 400;line-height: 150%;letter-spacing: 0.2px;color: #384860;">
+                    Hi Mr.Raihan Alauddin,</p>
                 <!-- <br> -->
-                <p>We are really happy to see you getting connected with our </br> family. Please click the link below
+                <p
+                    style="font-size: 16px;font-style: normal;font-weight: 400;line-height: 150%;letter-spacing: 0.2px;color: #384860;">
+                    We are really happy to see you getting connected with our </br> family. Please click the link below
                     to setup your password.</p>
-                <a href="#" class="primaryBtn">Click here to set password</a>
+                <a style="text-decoration: none; color:#FFFFFF;display: inline-block;margin: 20px 0;height: 21px;border-radius: 10px;font-family: 'Roboto', sans-serif;font-weight: 600;font-size: 18px;border: none;padding: 15px 17px;cursor: pointer; background-color: #EF4023; line-height: 18px;padding: 16px 32px;"
+                    href="#" class="primaryBtn">Click here to set password</a>
             </div>
-            <div class="facing_problem">
-                <h4>Facing any problem?</h4>
-                <p>Don’t hesitate to leave us an email at <a class="link" href="/">info@aerolex.com</a></p>
+            <div class="facing_problem"
+                style="background-color: #FFFFFF;border-radius: 8px;max-width: 544px;width: 544px;padding: 40px; margin-top: 16px;margin-bottom: 94px;">
+                <h4 style="font-size: 16px;">Facing any problem?</h4>
+                <p style=" font-size: 14px;">Don’t hesitate to leave us an email at <a style="text-decoration: underline;
+                    color: #0060B9;" class="link" href="/">info@aerolex.com</a></p>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Alauddin Tower, Ground Floor, House 17, Road 113/A, Gulshan 2, Dhaka 1212</p>
-        <p><a class="link" href="/">Unsubscribe</a> from our emails</p>
+    <footer style="text-align:center;">
+        <p style="font-size: 14px;color: #9D9D9D;">Alauddin Tower, Ground Floor, House 17, Road 113/A, Gulshan 2, Dhaka
+            1212</p>
+        <p style="font-size: 14px;color: #9D9D9D;"><a style="text-decoration: underline;
+            color: #0060B9;" class="link" href="/">Unsubscribe</a> from our emails</p>
     </footer>
 </body>
 
